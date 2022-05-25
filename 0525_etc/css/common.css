@@ -1,0 +1,125 @@
+@charset "uft-8";
+/* 문서에 최상단에 위치하게 할것 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 패딩이나 마진을 키우더라도 박스크기가 커지는 걸 막을 수 있다 */
+}
+
+body
+{
+    color: #333;
+}
+
+a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+/* CSS reset */
+
+.cen
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#boInfo
+{
+    font-size: 0.9em;
+    margin: 0.5em 0.5em;
+}
+
+.boHead
+{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#boList
+{
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+#boList>li
+{
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+}
+
+#boList>li:last-child
+{
+    border: none;
+}
+
+.boNo,
+.boTitle,
+.boWriter,
+.boDate,
+.boCount
+{
+    float: left;
+    padding: 0.5em 0.5em;
+}
+
+.boNo
+{
+    width: 50px;
+    text-align: center;
+}
+
+.boWriter
+{
+    width: 100px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.boDate
+{
+    width: 100px;
+    text-align: center;
+}
+
+.boCount
+{
+    width: 65px;
+    text-align: center;
+}
+
+.boTitle
+{
+    width: calc(100% - 315px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#boPagi
+{
+    text-align: center;
+}
