@@ -29,7 +29,7 @@
                 </li>
                 <li>
                     <div class="boNo">142</div>
-                    <div class="boTitle">오늘 배운 코딩내용 정리했습니다.오늘 배운 코딩내용 정리했습니다.오늘 배운 코딩내용 정리했습니다.오늘 배운 코딩내용 정리했습니다.</div>
+                    <div class="boTitle">오늘 배운 코딩내용 정리했습니다.</div>
                     <div class="boWriter">김희철</div>
                     <div class="boDate">2022-05-25</div>
                     <div class="boCount">5</div>
@@ -57,11 +57,43 @@
                 </li>
             </ul>
             <div id="boPagi">
-                <a href="list.html?boid=free&page=1">1</a>
-                <a href="list.html?boid=free&page=2">2</a>
-                <a href="list.html?boid=free&page=3">3</a>
-                <a href="list.html?boid=free&page=4">4</a>
-                <a href="list.html?boid=free&page=5">5</a>
+                <a class="active" href="list.html?boid=free&page=1">1</a><a href="list.html?boid=free&page=2">2</a><a href="list.html?boid=free&page=3">3</a><a href="list.html?boid=free&page=4">4</a><a href="list.html?boid=free&page=5">5</a>
+                <a href="list.html?boid=free$page=6"><i class="fas fa-caret-right"></i></a>
+                <a href="list.html?boid=free$page=14"><i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <form id="searchForm" action="search.html" method="get">
+                <select id ="searchType" name="searchType">
+                    <option value="0">제목+내용</option>
+                    <option value="1">작성자</option>
+                </select>
+                <input id = "searchTxt" name="searchTxt" placeholder="두글자 이상으로 입력해주세요."/>
+                <button id="searchBtn" type="button"><i class="fas fa-search"></i></button>
+            </form>
+
+            <script>
+                //버튼을 눌렀을때 입력창에 뭐라고 썼는지 그 값이 몇 글자 인지 알아내기
+                //만약 그 글자 수가 2이상이면
+                    //form태그의 내용을 전송
+                //또는 그렇지 않다면
+                    //경고창 띄우기(검색어를 두 글자 이상 입력하세요.)
+
+                // $("#searchBtn").click(function){
+                //     var txt =$("#searchBtn").val();
+                //     var len = txt.length;
+                //     if(leng>=2)
+                //     {
+                //         $("#searchBtn").submit();
+                //     }
+                //     else
+                //     {
+                //         alert("검색어를 두글자 이상으로 입력해 주세요.");
+                //     }
+                // });
+            </script>
+
+            <div id="btns">
+                <a href="write.html" class="btn">글쓰기</a>
             </div>
 
         </div>

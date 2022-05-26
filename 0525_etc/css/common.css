@@ -60,6 +60,7 @@ h3
     border-bottom: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
+    margin-bottom: 12px;
 }
 
 
@@ -67,6 +68,11 @@ h3
 {
     border-bottom: 1px solid #ccc;
     overflow: auto;
+}
+
+#boList>li:not(.boHead):hover
+{
+    background-color: #ccc;
 }
 
 #boList>li:last-child
@@ -122,4 +128,67 @@ h3
 #boPagi
 {
     text-align: center;
+}
+
+#boPagi a
+{
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-right: -1px;
+    margin-top: 5pxs;
+}
+
+#boPagi a:hover
+{
+    background-color: rgb(131, 163, 196);
+    color: rgb(10, 10, 10);
+}
+
+#searchForm
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#searchType,
+#searchTxt
+{
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #333;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+#searchBtn
+{
+    height: 30px;
+    width: 40px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+#btns
+{
+    text-align: right;
+    margin-top: -55px;
+}
+
+.btn
+{
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+    box-shadow: 3px 5px 6px rgba(10, 10, 10,0.5);
+    transition: background-color 0.4s,box-shadow 2s;
+}
+
+.btn:hover
+{
+    background-color: blue;
+    box-shadow: 3px 5px 6px rgba(10, 10, 10,0.2);
 }
